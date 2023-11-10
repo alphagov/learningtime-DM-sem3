@@ -1,0 +1,1 @@
+export const MOCK_POST_INFO_RESPONSE = 'post request test';
