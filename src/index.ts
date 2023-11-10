@@ -15,6 +15,4 @@ app.set("view engine", "html");
 
 app.use("/", indexRouter);
 
-app.listen(config.PORT, () => {
-  console.log(`Server is running http://localhost:${config.PORT}/index`);
-});
+export default app;
