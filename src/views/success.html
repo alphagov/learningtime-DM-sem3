@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% set title = 'Upload Success' %}
+
+{% block content %}
+    <div class="success-message">
+        <h1>Image Uploaded Successfully!</h1>
+        <p>Access your uploaded image <a href="{{ imageUrl }}" target="_blank">here</a>.</p>
+        <div class="image-preview">
+            <img src="{{ imageUrl }}" alt="Uploaded Image" />
+        </div>
+    </div>
+{% endblock %}

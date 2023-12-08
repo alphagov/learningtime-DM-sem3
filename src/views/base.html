@@ -6,10 +6,11 @@
     <title>{{ title }}</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    {% block content %}{% endblock %}
-    <script src="" async defer></script>
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
   </body>
 </html>

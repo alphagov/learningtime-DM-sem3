@@ -1,3 +1,8 @@
 {% extends 'base.html' %} {% set title = 'Index' %} {% block content %}
-<h1>Welcome home!</h1>
+<h1>Upload an Image</h1>
+<form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+    <input type="file" name="image" id="file" class="file-input" required>
+    <label for="file" class="file-label">Choose a file</label>
+    <button type="submit" class="submit-button">Upload</button>
+</form>
 {% endblock %}
