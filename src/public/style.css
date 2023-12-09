@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #f4f4f4; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,8 +15,8 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #1e1e1e; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
     border-radius: 8px;
     text-align: center;
 }
@@ -46,6 +46,17 @@ body {
     background-color: #0056b3;
 }
 
+#file-name {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+}
+
+.file-input:valid + .file-label + #file-name {
+    color: green;
+    font-weight: bold;
+}
+
 .submit-button {
     background-color: #28a745;
     color: white;
@@ -63,16 +74,17 @@ body {
 }
 
 .success-message h1 {
-    color: #4CAF50; /* Green color for success */
+    color: #4CAF50; 
 }
 
 .success-message p {
     font-size: 1.1em;
     margin: 20px 0;
+    color: #f4f4f4; 
 }
 
 .success-message a {
-    color: #007bff;
+    color: #1e90ff; 
     text-decoration: none;
 }
 
@@ -83,7 +95,7 @@ body {
 .image-preview img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 4px;
     padding: 5px;
 }

@@ -1,8 +1,22 @@
-{% extends 'base.html' %} {% set title = 'Index' %} {% block content %}
+{% extends 'base.html' %} {% set title = 'Index' %} 
+{% block content %}
 <h1>Upload an Image</h1>
 <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
     <input type="file" name="image" id="file" class="file-input" required>
     <label for="file" class="file-label">Choose a file</label>
+    <span id="file-name">No file chosen</span>
     <button type="submit" class="submit-button">Upload</button>
 </form>
+{% endblock %}
+{% block scripts %}
+<script>
+    document.getElementById('file').addEventListener('change', function() {
+        var fileNameDisplay = document.getElementById('file-name');
+        if (this.files.length > 0) {
+            fileNameDisplay.textContent = this.files[0].name;
+        } else {
+            fileNameDisplay.textContent = 'No file chosen';
+        }
+    });
+</script>
 {% endblock %}
